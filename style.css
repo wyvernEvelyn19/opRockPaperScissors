@@ -24,17 +24,10 @@ html {
   cursor: pointer;
 }
 
-.btn-start {
-  background-color: green;
-}
-.btn-start:hover {
-  background-color: rgb(0, 185, 0);
-}
-
-.btn-again {
+#btn-again {
   background-color: rgb(214, 178, 0);
 }
-.btn-again:hover {
+#btn-again:hover {
   background-color: rgb(255, 213, 0);
 }
 
@@ -180,19 +173,9 @@ html {
   font-size: x-large;
 }
 
-#start {
-  grid-row: 6/7;
-  grid-column: 3/4;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #play-again {
   grid-row: 6/7;
-  grid-column: 5/6;
+  grid-column: 4/5;
   height: 100%;
   width: 100%;
   display: flex;
