@@ -92,3 +92,31 @@
 // }
 
 // playGame();
+
+// -------------------------------------------------------------------------
+
+/*
+1] Create event listeners to take input from user
+2] Use user input to perform calculation and give decision.
+3] Disable Play Again button when score is 0 - 0
+*/
+
+const rockButton = document.querySelector("#rock-button");
+const paperButton = document.querySelector("#paper-button");
+const scissorsButton = document.querySelector("#scissors-button");
+let humanChoice;
+let computerChoice;
+
+function getComputerChoice() {
+  let choices = ["rock", "paper", "scissors"];
+  let ind = Math.floor(Math.random() * 3);
+  return choices[ind];
+}
+
+rockButton.addEventListener("click", function (e) {
+  humanChoice = "rock";
+  computerChoice = getComputerChoice();
+
+  console.log(humanChoice);
+  console.log(computerChoice);
+});
