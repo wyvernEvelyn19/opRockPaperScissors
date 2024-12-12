@@ -1,4 +1,4 @@
-/* TODO: Delete all borders, and add box shadow to container. */
+/* TODO: Delete all borders */
 * {
   margin: 0;
   padding: 0;
@@ -6,23 +6,54 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+  background-color: #333;
+}
+
+.btn {
+  padding: 20px;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  background-color: #333;
+  width: 100px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.btn-start {
+  background-color: green;
+}
+.btn-start:hover {
+  background-color: rgb(0, 185, 0);
+}
+
+.btn-again {
+  background-color: rgb(214, 178, 0);
+}
+.btn-again:hover {
+  background-color: rgb(255, 213, 0);
+}
+
 .container {
   margin: 50px;
   padding: 20px;
-  border: solid black 3px;
   height: 90vh;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 10px;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 }
 
 #main {
-  border: 3px solid black; /* Border for context */
   grid-row: 1 / 2;
-  grid-column: 1 / 7;
+  grid-column: 1 / 8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,4 +61,123 @@
 
 #title {
   font-size: x-large;
+}
+
+#player {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+#versus {
+  grid-row: 2/3;
+  grid-column: 4/5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+
+#computer {
+  grid-row: 2/3;
+  grid-column: 6/7;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+#player-score {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+#dash {
+  grid-row: 3/4;
+  grid-column: 4/5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+
+#computer-score {
+  grid-row: 3/4;
+  grid-column: 6/7;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+#rock {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+#paper {
+  grid-row: 4/5;
+  grid-column: 4/5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+
+#scissors {
+  grid-row: 4/5;
+  grid-column: 6/7;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+#start {
+  grid-row: 5/6;
+  grid-column: 3/4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#play-again {
+  grid-row: 5/6;
+  grid-column: 5/6;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
